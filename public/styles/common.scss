@@ -1,0 +1,40 @@
+.pagination {
+    display: inline-block;
+    padding: 40px;
+    text-align: center;
+
+    li {
+        display: inline-block;
+        width: 35px;
+        height: 38px;
+        text-align: center;
+        padding: 8px 2px;
+        background-color: #ffffff;
+        border-color: #e2e3e2;
+        border-style: solid;
+        border-width: 1px 1px 1px 0px;
+        &:first-child{
+            border-left-width: 1px;
+        }
+        &.active{
+         background-color: #e2e3e2;
+        }
+        &.disabled{
+            a {
+                cursor: none;
+            } 
+        }
+        a {
+            color: black;
+            text-decoration: none;
+        }
+    }
+}
+.loading{
+    display: block;
+    width: 100%;
+    text-align: center;
+    img{
+        margin-top: 15%;
+    }
+}

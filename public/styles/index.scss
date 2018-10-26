@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@import './common.scss';
+@import './header.scss';
+@import './footer.scss';
+@import './content.scss';
+@import './forks.scss';
+@import './modal.scss';

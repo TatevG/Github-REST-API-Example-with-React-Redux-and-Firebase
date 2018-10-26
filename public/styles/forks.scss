@@ -1,0 +1,98 @@
+.forks {
+    display: flex;
+    flex: auto;
+    align-items:flex-start;
+    align-content:flex-start;
+    position: relative;
+    .forksContent{
+        display: block;
+        width: 75%;
+        text-align: center;
+        .searchField{
+            input{
+            padding: 10px 5px;
+            width: 40%;
+            margin-top: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            border: 1px solid #e1e1e1;
+            }
+            button{
+                padding: 9px;
+                background-color: deepskyblue;
+                border: 1px solid deepskyblue;
+                margin-left: 5px;
+                border-radius: 5px;
+                width: 10%;
+                color: #e6e6e6;
+                font-size: 16px;
+                font-weight: bold;
+                cursor: pointer;
+                &:hover{
+                    background-color: #e6e6e6;
+                    color:deepskyblue;
+                }
+            }
+
+        }
+        .tables {
+            table{
+                border-collapse: collapse;
+                thead {
+                    tr {
+                        border-bottom: 1px solid #e5e5e5;
+                        th {
+                            &:hover {
+                                background-color: #F5F5F5;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        border-bottom: 1px solid #e5e5e5;
+                        height: 60px;
+                        td {
+                            padding: 6px 0;
+                            img{
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+                &.first {
+                    width: 70%;
+                    float: left;
+                    margin: 15px 0 0 10px;
+
+                }
+            &.second {
+                    width: 25%;
+                    float: left;
+                    margin: 15px 10px 0 0;
+                }
+            }
+        }
+    }
+    .aside {
+        position: absolute;
+        right: 10px;
+        top: 0;
+        border: 1px solid #e1e1e1;
+        border-top: none;
+        overflow-y: scroll;
+        width: 24%;
+        height: 100%;
+        a{
+            display: block;
+            text-decoration: none;
+            color: #333333;
+            text-align: center;
+            margin-top: 5px;
+            &:hover{
+                background-color: #e1e1e1;
+            }
+        }
+    }
+}
